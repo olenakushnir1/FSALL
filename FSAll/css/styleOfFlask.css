@@ -1,0 +1,552 @@
+.containerFlask {
+    display: flex;
+    flex-direction: row;
+    width: 29vw;
+    height: 16vw;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*first flask*/
+.bowl1 {
+    width: 10vw;
+    height: 10vw;
+    background: url(../img/test-tubes.png);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 1vw;
+    left: 0.2vw;
+}
+
+.shadowFlask1 {
+    background: url(../img/test-tubes_shadow.png);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 11vw;
+    height: 10vw;
+    top: -9vw;
+    left: 0.2vw;
+    opacity: 0.6;
+}
+
+
+/*water circle*/
+
+.bowl1 .inner1 {
+    border-radius: 50%;
+    width: 6.2vw;
+    height: 6.5vw;
+    position: relative;
+    top: -3.2vw;
+    left: 0.6vw;
+    z-index: 3;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/*wave on the circle water*/
+.bowl1 .waveShape1 {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    width: 29vw;
+    height: 15vw;
+    fill: #ffffff;
+}
+
+/*shadow top for circle*/
+.bowl1 .inner12 {
+    border-radius: 50%;
+    width: 7vw;
+    height: 6.3vw;
+    position: relative;
+    top: 3.1vw;
+    left: 0.5vw;
+    z-index: 1;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/*wave for top circle shadow */
+.bowl1 .waveShape12 {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    width: 29vw;
+    height: 15vw;
+    fill: #000;
+    opacity: 0.06;
+}
+
+/*shadow right for circle*/
+.bowl1 .inner1Right {
+    border-radius: 50%;
+    width: 7vw;
+    height: 6.5vw;
+    position: relative;
+    top: -9.7vw;
+    left: 0.6vw;
+    z-index: 2;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.bowl1 .waveShape1Right {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    width: 29vw;
+    height: 15vw;
+    fill: #000;
+    opacity: 0.15;
+}
+
+
+/*анімація заповнення*/
+
+.bowl1 .fill1 {
+    animation-name: fillAction;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fillAction {
+    0% {
+        transform: translate(0, 88px);
+    }
+
+    100% {
+        transform: translate(0, 35px);
+    }
+}
+
+@keyframes waveAction {
+    0% {
+        transform: translate(-150px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/*trapezoid*/
+.bowl2 {
+    position: relative;
+    width: 14vw;
+    height: 11vw;
+    top: 0.7vw;
+    left: -1.2vw;
+    background: url(../img/test-tubes2.png);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+}
+
+.shadowFlask2 {
+    background: url(../img/test-tubes2_shadow.png);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 15vw;
+    height: 12vw;
+    top: -11.2vw;
+    left: -1.2vw;
+    opacity: 0.6;
+}
+
+
+/*water for trapezoid*/
+
+.bowl2 .inner2 {
+    width: 8.2vw;
+    height: 4.5vw;
+    position: relative;
+    top: 1.2vw;
+    left: 1.2vw;
+    z-index: 3;
+    -webkit-border-radius: 35% 34% 31% 31% / 67% 84% 18% 18%;
+    border-radius: 35% 24% 31% 31% / 67% 84% 18% 18%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/*wave for trapezoid*/
+.bowl2 .waveShape2 {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    width: 300px;
+    height: 150px;
+    fill: #fafc9d;
+}
+
+/*top shadow for trapezoid*/
+.bowl2 .inner22 {
+    width: 8.5vw;
+    height: 4.5vw;
+    position: relative;
+    top: 5.5vw;
+    left: 1.5vw;
+    z-index: 1;
+    border-radius: 35% 32% 31% 31% / 67% 84% 18% 18%;
+    border-radius: 35% 32% 31% 31% / 67% 84% 18% 18%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+
+}
+
+/*анімація заповнення*/
+
+.bowl2 .fill2 {
+    animation-name: fillAction2;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+
+/*wave for top trapezoid shadow*/
+.bowl2 .waveShape22 {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3.0s;
+    width: 350px;
+    height: 150px;
+    fill: #f7ea00;
+}
+
+/*shadow right for trapezoid*/
+.bowl2 .inner2Right {
+    width: 8.5vw;
+    height: 4.5vw;
+    position: relative;
+    top: -3.3vw;
+    left: 1.8vw;
+    z-index: 2;
+    border-radius: 35% 34% 31% 31% / 67% 84% 18% 18%;
+    border-radius: 35% 34% 31% 31% / 67% 84% 18% 18%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/*wave shadow Right for trapezoid*/
+.bowl2 .waveShape2Right {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    width: 300px;
+    height: 150px;
+    fill: #e6da04;
+}
+
+@keyframes fillAction2 {
+    0% {
+        transform: translate(0, 55px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+/*test tube*/
+.bowl3 {
+    top: 0.8vw;
+    left: -3.4vw;
+    position: relative;
+    width: 5vw;
+    height: 10vw;
+    background: url(../img/test-tubes3.png);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+}
+
+.shadowFlask3 {
+    background: url(../img/test-tubes3_shadow.png);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 4vw;
+    height: 9vw;
+    top: -9vw;
+    left: -3.2vw;
+}
+
+
+/*water for test tube*/
+
+.bowl3 .inner3 {
+    width: 1.7vw;
+    height: 7.7vw;
+    position: relative;
+    top: -5.2vw;
+    left: 1.2vw;
+    z-index: 3;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+}
+
+/*wave for test tube*/
+.bowl3 .waveShape3 {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    width: 300px;
+    height: 150px;
+    fill: #ffc943;
+}
+
+/*top shadow for test tube*/
+.bowl3 .inner32 {
+    width: 2.1vw;
+    height: 7.2vw;
+    position: relative;
+    top: 1.7vw;
+    left: 1.2vw;
+    z-index: 2;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+
+/*wave for top shadow*/
+.bowl3 .waveShape32 {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    opacity: 0.5;
+    width: 300px;
+    height: 150px;
+    fill: #d09001;
+}
+
+/*right shadow for test tube*/
+
+.bowl3 .inner3Right {
+    width: 1.9vw;
+    height: 7.7vw;
+    position: relative;
+    top: -12.9vw;
+    left: 1.3vw;
+    z-index: 2;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/*wave for right shadow test tube*/
+.bowl3 .waveShape3Right {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    width: 300px;
+    height: 150px;
+    fill: #c79c32;
+}
+
+/*анімація заповнення*/
+
+.bowl3 .fill3 {
+    animation-name: fillAction3;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes fillAction3 {
+    0% {
+        transform: translate(0, 110px);
+    }
+
+    100% {
+        transform: translate(0, 40px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bowl1 .inner1 {
+        border-radius: 50%;
+        width: 6.4vw;
+        height: 7.6vw;
+        position: relative;
+        top: -5.3vw;
+        left: 0.5vw;
+        z-index: 3;
+        overflow: hidden;
+        backface-visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        animation-name: shadow;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+
+    .bowl1 .inner12 {
+        border-radius: 50%;
+        width: 7vw;
+        height: 7.3vw;
+        position: relative;
+        top: 2vw;
+        left: 0.5vw;
+        z-index: 1;
+        overflow: hidden;
+        backface-visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        animation-name: shadow;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+
+    .bowl1 .inner1Right {
+        border-radius: 50%;
+        width: 7vw;
+        height: 7.5vw;
+        position: relative;
+        top: -12.8vw;
+        left: 0.6vw;
+        z-index: 2;
+        overflow: hidden;
+        backface-visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        animation-name: shadow;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+
+    .bowl3 .inner3 {
+        width: 1.6vw;
+        height: 8.7vw;
+        position: relative;
+        top: -7vw;
+        left: 1.3vw;
+        z-index: 3;
+        border-bottom-left-radius: 58px;
+        border-bottom-right-radius: 58px;
+        overflow: hidden;
+        backface-visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        animation-name: shadow;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+        animation-duration: 4s;
+    }
+
+    .bowl3 .inner32 {
+        width: 1.9vw;
+        height: 8vw;
+        position: relative;
+        top: 0.7vw;
+        left: 1.3vw;
+        z-index: 2;
+        border-bottom-left-radius: 58px;
+        border-bottom-right-radius: 58px;
+        overflow: hidden;
+        backface-visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        animation-name: shadow;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+
+    .bowl3 .inner3Right {
+        width: 1.9vw;
+        height: 8.7vw;
+        position: relative;
+        top: -15.7vw;
+        left: 1.3vw;
+        z-index: 1;
+        border-bottom-left-radius: 58px;
+        border-bottom-right-radius: 58px;
+        overflow: hidden;
+        backface-visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        animation-name: shadow;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+        animation-duration: 4s;
+    }
+
+}
